@@ -1,4 +1,4 @@
-package com.ai.based.fitness.userservice.dto;
+package com.ai.based.fitness.gateway.user;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -17,7 +17,7 @@ public class RegisterRequest {
   private String password;
 
   private String keycloakId;
-  
+
   private String firstName;
   private String lastName;
 

@@ -18,7 +18,18 @@ public class UserService {
 
   public UserResponse register(@Valid RegisterRequest request) {
     if (repository.existsByEmail(request.getEmail())) {
-      throw new RuntimeException(String.format("Email %s already exists!", request.getEmail()));
+//      throw new RuntimeException(String.format("Email %s already exists!", request.getEmail()));
+      User existingUser = repository.findByEmail(request.getEmail());
+      UserResponse userResponse = new UserResponse();
+      userResponse.setId(existingUser.getId());
+      userResponse.setKeycloakId(existingUser.getKeycloakId());
+      userResponse.setPassword(existingUser.getPassword());
+      userResponse.setEmail(existingUser.getEmail());
+      userResponse.setFirstName(existingUser.getFirstName());
+      userResponse.setLastName(existingUser.getLastName());
+      userResponse.setCreatedAt(existingUser.getCreatedAt());
+      userResponse.setUpdatedAt(existingUser.getUpdatedAt());
+      return userResponse;
     }
 
     User user = new User();
@@ -58,6 +69,7 @@ public class UserService {
 
   public Boolean existsByUserId(String userId) {
     log.info("Calling User Validation API for userId: {}", userId);
-    return repository.existsById(userId);
+//    now made user identifiabel by keycloak id as frontend also requires this kind of id, better to do it now.
+    return repository.existsByKeycloakId(userId);
   }
 }
