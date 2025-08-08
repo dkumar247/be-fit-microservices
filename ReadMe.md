@@ -567,13 +567,19 @@ volumes:
 
 Run with: `docker-compose up -d`
 
-## 🤝 Contributing
+[//]: # (## 🤝 Contributing)
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+[//]: # ()
+
+[//]: # (1. Fork the repository)
+
+[//]: # (2. Create your feature branch &#40;`git checkout -b feature/AmazingFeature`&#41;)
+
+[//]: # (3. Commit your changes &#40;`git commit -m 'Add some AmazingFeature'`&#41;)
+
+[//]: # (4. Push to the branch &#40;`git push origin feature/AmazingFeature`&#41;)
+
+[//]: # (5. Open a Pull Request)
 
 ## 📝 License
 
