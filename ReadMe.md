@@ -34,6 +34,10 @@ Gemini API. Track your activities and receive personalized fitness insights!
 - [Author](#-author)
 - [Additional Resources](#-additional-resources)
 
+## Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/y9AYrLv1zgs?si=f9fLQoputuCAsw-k)
+
 ## 🏗️ Architecture Overview
 
 ```
